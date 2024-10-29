@@ -1,0 +1,28 @@
+[ req ]
+default_bits       = 2048
+default_md         = sha256
+distinguished_name = req_distinguished_name
+req_extensions     = req_ext
+
+[ req_distinguished_name ]
+countryName                 = PL
+countryName_default         = PL
+stateOrProvinceName         = Malopolska
+stateOrProvinceName_default = Malopolska
+localityName                = Wadowice
+localityName_default        = Wadowice
+organizationName            = Robert Jamroz
+organizationName_default    = Robert Jamroz
+organizationalUnitName      = IT
+organizationalUnitName_default = IT
+commonName                  = RobertJamroz
+commonName_default          = RobertJamroz
+emailAddress                = rockfade@gmail.com
+emailAddress_default        = rockfade@gmail.com
+
+[ req_ext ]
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1   = localhost
+DNS.2   = robert-jamroz.localhost
