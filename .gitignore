@@ -1,3 +1,6 @@
 certs/*
 !certs/.gitkeep
 .history/
+*.sig
+*.pem
+*.crt
